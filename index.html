@@ -8,108 +8,95 @@
 </head>
 <body>
     <h1>📝 Comandos útiles de Git</h1>
-    <p>📌 Inicialización y configuración
-git init
-
-Inicializa un repositorio nuevo en la carpeta actual.
-
-git clone <url>
-
-Clona un repositorio remoto a tu máquina.
-
-git config --global user.name "Tu Nombre"
-git config --global user.email "tu@email.com"
-
-Configura tu identidad en Git.
-
-📂 Estado y seguimiento de cambios
-git status
-
-Muestra el estado actual del repositorio.
-
-git add <archivo>
-git add .
-
-Agrega archivos al área de staging.
-
-git restore <archivo>
-
-Descarta cambios en un archivo (antes de hacer commit).
-
-💾 Guardar cambios
-git commit -m "mensaje"
-
-Guarda los cambios con un mensaje.
-
-git commit -am "mensaje"
-
-Agrega y commitea archivos modificados (no nuevos).
-
-🌿 Ramas (branches)
-git branch
-
-Lista las ramas.
-
-git branch <nombre>
-
-Crea una nueva rama.
-
-git checkout <rama>
-
-Cambia de rama.
-
-git checkout -b <rama>
-
-Crea y cambia a una nueva rama.
-
-🔀 Fusión de ramas
-git merge <rama>
-
-Fusiona una rama con la actual.
-
-🌐 Trabajo con repositorios remotos
-git remote add origin <url>
-
-Conecta tu repositorio local con uno remoto.
-
-git push origin <rama>
-
-Sube tus cambios al repositorio remoto.
-
-git pull
-
-Trae cambios del repositorio remoto y los fusiona.
-
-git fetch
-
-Trae cambios sin fusionarlos.
-
-🕓 Historial
-git log
-
-Muestra el historial de commits.
-
-git log --oneline
-
-Historial resumido en una línea por commit.
-
-⚠️ Deshacer cambios
-git reset --hard
-
-Elimina TODOS los cambios (usar con cuidado).
-
-git revert <commit>
-
-Deshace un commit creando uno nuevo.
-
-🚀 Tips útiles
-Usá mensajes de commit claros y cortos.
-Hacé commits pequeños y frecuentes.
-Usá ramas para nuevas funcionalidades.
-Siempre hacé git pull antes de trabajar.
-📚 Flujo básico de trabajo
-git add .
-git commit -m "mensaje"
-git push</p>
+    
+    <section>
+        <h2>📌 Inicialización y configuración</h2>
+        <ul>
+            <li><code>git init</code> - Inicializa un repositorio nuevo en la carpeta actual.</li>
+            <li><code>git clone &lt;url&gt;</code> - Clona un repositorio remoto a tu máquina.</li>
+            <li><code>git config --global user.name "Tu Nombre"</code> - Configura tu nombre en Git.</li>
+            <li><code>git config --global user.email "tu@email.com"</code> - Configura tu email en Git.</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>📂 Estado y seguimiento de cambios</h2>
+        <ul>
+            <li><code>git status</code> - Muestra el estado actual del repositorio.</li>
+            <li><code>git add &lt;archivo&gt;</code> - Agrega un archivo específico al área de staging.</li>
+            <li><code>git add .</code> - Agrega todos los archivos modificados al área de staging.</li>
+            <li><code>git restore &lt;archivo&gt;</code> - Descarta cambios en un archivo (antes de hacer commit).</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>💾 Guardar cambios</h2>
+        <ul>
+            <li><code>git commit -m "mensaje"</code> - Guarda los cambios con un mensaje.</li>
+            <li><code>git commit -am "mensaje"</code> - Agrega y commitea archivos modificados (no nuevos).</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>🌿 Ramas (branches)</h2>
+        <ul>
+            <li><code>git branch</code> - Lista las ramas.</li>
+            <li><code>git branch &lt;nombre&gt;</code> - Crea una nueva rama.</li>
+            <li><code>git checkout &lt;rama&gt;</code> - Cambia de rama.</li>
+            <li><code>git checkout -b &lt;rama&gt;</code> - Crea y cambia a una nueva rama.</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>🔀 Fusión de ramas</h2>
+        <ul>
+            <li><code>git merge &lt;rama&gt;</code> - Fusiona una rama con la actual.</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>🌐 Trabajo con repositorios remotos</h2>
+        <ul>
+            <li><code>git remote add origin &lt;url&gt;</code> - Conecta tu repositorio local con uno remoto.</li>
+            <li><code>git push origin &lt;rama&gt;</code> - Sube tus cambios al repositorio remoto.</li>
+            <li><code>git pull</code> - Trae cambios del repositorio remoto y los fusiona.</li>
+            <li><code>git fetch</code> - Trae cambios sin fusionarlos.</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>🕓 Historial</h2>
+        <ul>
+            <li><code>git log</code> - Muestra el historial de commits.</li>
+            <li><code>git log --oneline</code> - Historial resumido en una línea por commit.</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>⚠️ Deshacer cambios</h2>
+        <ul>
+            <li><code>git reset --hard</code> - Elimina TODOS los cambios (usar con cuidado).</li>
+            <li><code>git revert &lt;commit&gt;</code> - Deshace un commit creando uno nuevo.</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>🚀 Tips útiles</h2>
+        <ul>
+            <li>Usá mensajes de commit claros y cortos.</li>
+            <li>Hacé commits pequeños y frecuentes.</li>
+            <li>Usá ramas para nuevas funcionalidades.</li>
+            <li>Siempre hacé git pull antes de trabajar.</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>📚 Flujo básico de trabajo</h2>
+        <ol>
+            <li><code>git add .</code></li>
+            <li><code>git commit -m "mensaje"</code></li>
+            <li><code>git push</code></li>
+        </ol>
+    </section>
 </body>
 </html>
