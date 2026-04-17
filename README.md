@@ -14,7 +14,7 @@ Este proyecto es una guía básica de comandos de Git organizada para consulta r
 
 ## Cómo usar
 
-Abrí el archivo `index.html` en tu navegador para visualizar la guía de comandos.
+Abrí el archivo `index.html` en tu navegador para explorar la guía de comandos de Git.
 
 ## Próximos pasos
 
